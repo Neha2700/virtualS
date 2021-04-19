@@ -5,7 +5,7 @@ db=SQLAlchemy()
 
 
 empViewAppli = Blueprint("empViewAppli", __name__, template_folder="templates")
-@empViewAppli.route('/employeeLogin-viewApplication')
+@empViewAppli.route('/')
 def hireIntern8():
     return render_template('8hireIntern.html')
 

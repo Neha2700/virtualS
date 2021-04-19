@@ -6,7 +6,7 @@ db=SQLAlchemy()
 
 employeeLogin = Blueprint("employeeLogin", __name__, template_folder="templates")
 
-@employeeLogin.route('/employeeLogin')
+@employeeLogin.route('/')
 def hireIntern1():
     return render_template('1hireIntern.html')
 
