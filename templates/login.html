@@ -192,14 +192,14 @@
                 <div style="display: flex; justify-content: center;">
                 <div class="text">I am an Existing User</div>
                 </div>
-                <form action="{{url_for('check')}}" method="post">                <div class="email">Email </div>
+                <form action="{{url_for('elogin.check')}}" method="post">                <div class="email">Email </div>
                 <div style="padding-left: 10%;"><input type="text" class="email-text" name="email"></div>
                 <div class="password">Password</div>
                 <div style="padding-left: 10%;"><input type="text" class="pass-text" name="pass"></div>
                 <div style="display: flex; justify-content: center;">
                     <button class="submit">SIGN IN</button>
                     <div class="forget">Forgot Password?</div>
-                    <div class="new-user">I am a new user<i style="color:blue; cursor: pointer;"> <a href="{{url_for('signup')}}"> Create Account </a></i></div>
+                    <div class="new-user">I am a new user<i style="color:blue; cursor: pointer;"> <a href="{{url_for('esignup.signup')}}"> Create Account </a></i></div>
             </div>
         </form>
 
