@@ -17,7 +17,7 @@ app = Flask(__name__)
 
 
 
-app.config['SQLALCHEMY_DATABASE_URI']='postgresql://postgres:#Postgres1234@localhost/vsp'
+app.config['SQLALCHEMY_DATABASE_URI']='postgresql://postgres:12345@localhost/vsp'
 db=SQLAlchemy(app)
 # db.init_app(app)
 
