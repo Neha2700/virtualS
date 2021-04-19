@@ -4,9 +4,9 @@ from pythonfiles.models import *
 db=SQLAlchemy()
 
 
-empViewExistAppl = Blueprint("empViewExistAppl", __name__, template_folder="templates")
+hire3Intern = Blueprint("hire3Intern", __name__, template_folder="templates")
 
-@empViewExistAppl.route('/')
+@hire3Intern.route('/')
 def hireIntern3():
     return render_template('3hireIntern.html')
 

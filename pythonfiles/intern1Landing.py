@@ -7,6 +7,6 @@ db=SQLAlchemy()
 iLanding = Blueprint("iLanding", __name__, template_folder="templates")
 
 @iLanding.route("/")
-def intern-Landing():
+def internLanding():
     return render_template('intern1Landing.html')
 

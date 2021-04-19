@@ -4,9 +4,8 @@ from pythonfiles.models import *
 db=SQLAlchemy()
 
 
-employeeLoginHireMember = Blueprint("/employeeLogin-HireMember", __name__, template_folder="templates")
+hire2Intern = Blueprint("hire2Intern", __name__, template_folder="templates")
 
-@employeeLoginHireMember.route('/')
+@hire2Intern.route('/')
 def hireIntern2():
     return render_template('2hireIntern.html')
-

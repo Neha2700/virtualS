@@ -6,5 +6,5 @@ db=SQLAlchemy()
 
 iStartupList = Blueprint("iStartupList", __name__, template_folder="templates")
 @iStartupList.route("/")
-def intern-startupList():
+def internStartupList():
     return render_template('intern5startupList.html')

@@ -6,5 +6,5 @@ db=SQLAlchemy()
 
 iLogin = Blueprint("iLogin", __name__, template_folder="templates")
 @iLogin.route("/")
-def intern-Login():
+def internLogin():
     return render_template('intern2Login.html')

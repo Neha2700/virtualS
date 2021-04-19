@@ -6,5 +6,5 @@ db=SQLAlchemy()
 
 iStartupPage = Blueprint("iStartupPage", __name__, template_folder="templates")
 @iStartupPage.route("/")
-def intern-startupPage():
+def internStartupPage():
     return render_template('intern6StartupPage.html')

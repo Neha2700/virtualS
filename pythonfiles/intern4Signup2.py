@@ -6,5 +6,5 @@ db=SQLAlchemy()
 
 iSignup2 = Blueprint("iSignup2", __name__, template_folder="templates")
 @iSignup2.route("/")
-def intern-signup2():
+def internSignup2():
     return render_template('intern4-signup2.html')
