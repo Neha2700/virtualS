@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .blue-box{
+      width: 10%;
+      height: 50px;
+      background: #1B40E6;
+    }
+
+    .corner-text {
+      position: absolute;
+      left: 79.83%;
+      top: 18px;;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 120%;
+            /* identical to box height */
+
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+      color: #53585E;
+     }
+    .back{
+      position: absolute;
+      left: 1%;
+      top: 12%;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      letter-spacing: 0.233333px;
+      color: #53585E;
+
+        }    
+    .gap{
+      padding-top: 13%;
+    }
+    .gap-label{
+      padding-top: 0%;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"] {
+      width: 85%;
+      padding: 2% 0%;
+      
+      margin: 3% 0;
+      display: inline-block;
+      border: 2px solid #ccc;
+      box-sizing: border-box;
+    }
+    .padding1 {
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+
+    button {
+      background-color: Green;
+      color: white;
+      padding: 15px 20px;
+      margin: 8px 0;
+      cursor: pointer;
+      width: 100%;
+    }
+    .container {
+      position: absolute;
+      width: 60%;
+      height: 120%;
+      left: 35%;
+      right: 5%;
+      background: #FFFFFF;
+      box-shadow: 0px 2px 10px #7591B0;
+      border-radius: 8px;
+    }
+    .left-panel {
+      position: absolute;
+      width: 35%;
+      height: 120%;
+      left: 5%;
+
+      background: rgba(117, 145, 176, 0.491559);
+      border-radius: 8px 0px 0px 8px;
+
+    }
+    .label-name{
+      position: absolute;
+      left: 10%;
+      margin: 11% 0;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size:100%;
+    }
+    @media screen and (max-width: 600px) {
+      .corner-text{
+        font-size: 60%;
+        left: 60%;
+      }
+
+           .label-name{
+             font-size: 80%;
+             margin: 22% 0;
+         
+           }
+           .gap{
+             padding-top: 40%;
+           }
+          .gap-label{
+            top: 35%;
+          }
+           input[type="text"],
+           input[type="email"],
+           input[type="password"],
+           input[type="number"] {
+     
+             margin: 7% 0;
+           }
+           .container {
+            height: 70%;
+           }
+           .left-panel {
+            height: 70%;
+           }
+        }
+    
+
+    .signupbtn {
+      float: right;
+      width: 20%;
+      border-radius: 30px;
+      background-color: blue;
+    }
+
+  
+    /*clear floats*/
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    /*styles for cancel button and signup button
+      on extra small screens*/
+
+    @media screen and (max-width: 400px) {
+      .signupbtn {
+        width: 100%;
+      }
+    }
+
+    h1 {
+      position: absolute;
+      left: 2%;
+      top: 1%;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 150%;
+      letter-spacing: 0.4px;
+      color: #1B40E6;
+    }
+   
+  </style>
+
+  <body style="background: #E5E5E5; height: 130%;">
+    <div style="padding-left:0.2%; padding-top: 0.2%;">
+      <div class="blue-box"></div>
+  </div>  
+  <div class="corner-text">entrepreneur View </div>
+  <div class="back"><b>&#x2190 Back</b></div>
+  <div class="padding1">
+  <div class="left-panel"></div>
+        <div class="container">
+          
+          <h1> Create Account</h1>
+            
+          <form action="intern4-signup2.html" method="post" style="border: 1px solid #ccc">
+            <div style="padding-left: 10%;">
+              <div class="gap-label" ></div>
+              <label class="label-name" >Name</label>
+              <div class="gap" ></div>
+              <input
+                
+                type="text"
+                placeholder="Enter Name"
+                name="name"
+                
+              />
+
+              <label class="label-name">Email</label>
+              <input
+                type="email"
+                placeholder="Enter Email"
+                name="email"
+                
+              />
+
+              <label class="label-name">Phone Number</label>
+              <input
+                type="number"
+                placeholder="Enter Phone Number"
+                name="phone"
+               
+              />
+
+              <label class="label-name" >Password</label>
+              <input
+                type="password"
+                placeholder="Enter Password"
+                name="psw"
+                
+              />
+             
+              <label class="label-name" >Repeat Password</label>
+              <input
+                type="password"
+                placeholder="Repeat Password"
+                name="psw-repeat"
+                
+              />
+              <br><br>
+              <input type="checkbox" checked="checked" /> Remember me
+              <p>
+                To create an account you have to agree our
+                <a href="#">Terms & Privacy</a>.
+              </p>
+
+              <div class="clearfix">
+                  <button type="submit" class="signupbtn">
+                    <b>Next</b> 
+                  </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
